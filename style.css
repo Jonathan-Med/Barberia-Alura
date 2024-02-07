@@ -1,0 +1,294 @@
+﻿body {
+    font-family: 'Merriweather', serif;
+}
+
+header {
+    background: #808080;
+    padding: 20px 0px;
+}
+
+.encabezado {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: lime;
+    text-decoration: underline;
+}
+
+.mainContacto {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.servicios {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.servicios li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.servicios li:hover {
+    border-color: lime;
+}
+
+.servicios li:active {
+    border-color: blue;
+}
+
+.servicios h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.servicios li:hover h2 {
+    font-size: 35px;
+}
+
+.servicio-descripcion {
+    font-size: 18px;
+}
+
+.servicio-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright {
+    color:azure;
+    font-size: 13px;
+    margin: 20px;
+}
+
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.inputPadron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    font-size: 15px;
+}
+.checkbox {
+    margin: 20px, 0;
+}
+
+.enviar { 
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: navajowhite;
+    background: #1630aa;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: #001a81;
+    transform: scale(1.10) rotate(-12deg);
+}
+
+table {
+    margin: 40px 40px;
+}
+
+thead { 
+    background: #4e4e4e;
+    color:antiquewhite;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+/*CSS para la pagina principal*/
+
+.navPrincipal {
+    font-family: 'Sixtyfour', sans-serif;
+}
+
+.banner {
+    width: 100%;
+}
+
+.fondoPrincipal {
+    background: linear-gradient(#fcfcfc, #eaeaea);
+}
+
+.principal {
+    width: 940px;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    color:rgba(205,10,10, 100%);
+    clear: left;
+}
+
+.titulo-principal:first-letter {
+    font-weight: bold;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong{ 
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#eaeaea, #858585);
+}
+
+.mapa p {
+    margin: 0 0 2em 0;
+    text-align: center;
+}
+
+.mapaContenido {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales {
+    padding: 3em 0;
+    background: linear-gradient(#858585, #1c1c1c);
+}
+
+.contenidoDiferenciales {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.listaDiferenciales {
+    width: 40%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.item {
+    line-height: 1.5;
+}
+
+.item:first-child {
+    font-weight: bold;
+}
+
+.item::before {
+    content: "★";
+}
+
+.imgDiferenciales {
+    width: 60%;
+    transition: 600ms;
+    box-shadow: 8px 8px 50px 8px #0c0c0c;
+}
+
+.imgDiferenciales:hover {
+    opacity: 40%;
+}
+
+.video { 
+    width: 560px; 
+    margin: 1em auto;
+}
+
+@media screen and (max-width:500px) {
+    h1 {
+        text-align:center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .caja, .principal, .mapaContenido, .contenidoDiferenciales, .video, .encabezado, .mainContacto, .servicios{
+        width: auto;
+    }
+
+    .servicios li {
+        width: 100%;
+        margin: 3% 0 3% 0;
+    }
+
+    .mainContacto {
+        margin: 0 0 0 10%;
+    }
+
+    .listaDiferenciales, .imgDiferenciales{
+        width: 100%;
+    }
+}
